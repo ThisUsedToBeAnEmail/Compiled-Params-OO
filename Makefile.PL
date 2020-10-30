@@ -42,7 +42,7 @@ my %WriteMakefileArgs = (
 );
 
 delete $WriteMakefileArgs{META_MERGE} && delete $WriteMakefileArgs{META_ADD}
-    unless eval { ExtUtils::MakeMaker->VERSION('6.46'); 1 }
+    unless eval { ExtUtils::MakeMaker->VERSION('6.46'); 1 };
 
 # Compatibility with old versions of ExtUtils::MakeMaker
 unless (eval { ExtUtils::MakeMaker->VERSION('6.64'); 1 }) {
